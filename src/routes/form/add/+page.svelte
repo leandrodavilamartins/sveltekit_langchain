@@ -11,8 +11,8 @@
 	async function sendData() {
 		// the second parameter of the addDoc function is the object to be saved
 		const docRef = await addDoc(collection(db, 'countries'), {
-			country: country,
-			value: valor
+			country: country.trim(),
+			value: valor.trim()
 		});
 		console.log('Document written with reference: ', docRef);
 		country = '';

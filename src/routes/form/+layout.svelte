@@ -1,8 +1,12 @@
+<script>
+	import { Link } from 'carbon-components-svelte';
+</script>
+
 <div class="container">
 	<nav>
-		<a href="/form/add">Adicionar /</a>
-		<a href="/form/delete">Excluir /</a>
-		<a href="/">Página principal</a>
+		<Link href="/form/add">Adicionar /</Link>
+		<Link href="/form/delete">Excluir /</Link>
+		<Link href="/">Página principal</Link>
 	</nav>
 </div>
 
