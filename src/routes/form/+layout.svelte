@@ -6,21 +6,32 @@
 	<nav>
 		<Link href="/form/add">Adicionar /</Link>
 		<Link href="/form/delete">Excluir /</Link>
+		<Link href="/form/ai">OpenAI /</Link>
 		<Link href="/">Página principal</Link>
 	</nav>
 </div>
 
-<slot />
+<div class="container">
+	<div class="placeholder">
+		<p>&nbsp</p>
+	</div>
+	<slot />
+</div>
 
 <style>
 	.container {
 		display: flex;
 		margin: auto;
-		align-items: center;
+		align-items: flex-start;
+		justify-content: center;
 	}
 	nav {
 		display: flex;
 		margin: auto;
 		justify-content: flex-start;
+	}
+	.placeholder {
+		display: flex;
+		margin-top: 10%;
 	}
 </style>
