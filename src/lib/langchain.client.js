@@ -1,6 +1,8 @@
 import { OpenAI } from 'langchain/llms/openai';
-import { PUBLIC_API_KEY } from '$env/static/public';
+import { ChatOpenAI } from 'langchain/chat_models/openai';
+import { PUBLIC_OPENAI_KEY } from '$env/static/public';
 
-const llm = new OpenAI({ openAIApiKey: PUBLIC_API_KEY });
+const llm = new OpenAI({ openAIApiKey: PUBLIC_OPENAI_KEY });
+const chat = new ChatOpenAI({ openAIApiKey: PUBLIC_OPENAI_KEY });
 
-export { llm };
+export { llm, chat };
